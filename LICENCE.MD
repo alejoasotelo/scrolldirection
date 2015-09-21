@@ -1,0 +1,1 @@
+scrollDirection v1.0.0 | (c) 2015 by AlejoSotelo.com.ar | https://github.com/alejoasotelo/scrolldirection/LICENSE.md

@@ -1,4 +1,4 @@
-/* scrollDirection v1.0.0 | (c) 2015 by AlejoSotelo | https://github.com/alejoasotelo/scrolldirection/blob/master/LICENSE.md */
+/* scrollDirection v1.0.0 | (c) 2015 by AlejoSotelo.com.ar | http://github.com/alejoasotelo/scrolldirection/LICENSE.md */
 
 jQuery.fn.extend({
     'scrollDirection' : function(threshold, cb)
