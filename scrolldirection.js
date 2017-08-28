@@ -17,7 +17,22 @@ jQuery.fn.extend({
 
         this.lastPageY = 0;
 
-        this.scrollHandler = function()
+        this.debounce = function(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+
+        this.scrollHandler = this.debounce(function()
         {
             var pageY = window.pageYOffset;
 
@@ -36,7 +51,7 @@ jQuery.fn.extend({
 
                 self.lastPageY  = pageY;
             }
-        }
+        }, 250);
 
         this.$obj.bind('scroll', self.scrollHandler);
     },
