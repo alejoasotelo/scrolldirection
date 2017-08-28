@@ -1,4 +1,4 @@
-# JS ScrollDirection
+# JS ScrollDirection v1.1.0
 
 Jquery Plugin para detectar scrollup y scrolldown.
 
