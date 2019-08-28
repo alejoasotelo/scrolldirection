@@ -1,0 +1,13 @@
+{
+    "name": "scrolldirection",
+    "version": "1.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "terser scrolldirection.js -c -m -o scrolldirection.min.js --ecma 5 --source-map"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
